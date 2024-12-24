@@ -23,11 +23,11 @@
             content: "";
             display: block;
             position: absolute;
-            top: 20px;
-            width: 300px;
+            top: 1.25rem;
+            width: 18.75rem;
             background-color: $theme-color;
-            height: 2px;
-            margin-left: 220px;
+            height: .125rem;
+            margin-left: 13.75rem;
         }
     }
     &__grid{
@@ -57,7 +57,7 @@
         list-style-type: none;
         position: relative;
         left: -8%;
-        gap: 30px;
+        gap: 1.875rem;
         padding: 0 3rem;
     }
     &__grid-info-list-item{
@@ -70,10 +70,10 @@
         &::before{
             content: "✰";
             position: absolute;
-            left: -20px;
+            left: -1.25rem;
             top: 6px;
             color: $theme-color;
-            line-height: 12px;
+            line-height: .75rem;
         }
     }
     &__grid-image{
@@ -146,8 +146,8 @@
         visibility: visible;
         z-index: 1;
         position: absolute;
-        height: 550px;
-        width: 430px;
+        height: 34.375rem;
+        width: 26.875rem;
         background-color: rgba(255, 171, 145, 0.61);
         border-radius: 0.2rem;
         transition: 0.3s ease-in-out;
@@ -155,7 +155,6 @@
         &:hover{
             background-color: #00000000;
         }
-    
         &__border{
             z-index: -3;
             height: 100%;
