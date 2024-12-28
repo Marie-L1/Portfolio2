@@ -93,31 +93,15 @@
         }
     }
     @include desktop{
-        max-width: 700px;
+        max-width: 43.75rem;
         margin: 23rem auto;
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
 
         &__wrapper{
             gap: 1.7rem;
-            background-color: rgba(255, 171, 145, 0.31); 
             padding: 3rem 2rem; 
-            border-radius: .5rem; 
             max-width: 70vw; 
-            margin: auto;
-            box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.2); 
 
             &::after{
-                content: "";
-                background-image: url("/images/olive-5.svg");
-                background-size: 100%;
-                position: absolute;
-                background-repeat: no-repeat;
-                background-position: top right;
-                opacity: 0.20;
                 top: -270%;
                 right: 5%;
                 left: -145%;
@@ -125,40 +109,5 @@
                 height: 500%;
                 z-index: -1;
             }
-        }
-
-        &__title{
-            color: $theme-color;
-            @include text-base;
-            font-weight: 300;
-
-            &::before{
-                counter-increment: title;
-                content: "0" counter(title) ".";
-                margin-right: 0.5rem;
-                color: $theme-color;
-            }
-        }
-        &__sub-title{
-            @include text-giant;
-            color: $light-brown;
-        }
-        &__text{
-            color: $light-brown;
-            @include text-large;
-            letter-spacing: 0.07rem;
-            line-height: 1.6rem;
-            font-weight: 600;
-            text-align: center;
-        }
-        &__cta{
-            margin-top: 1rem;
-
-            .btn{
-                padding: 1rem 2rem;
-                @include text-large;
-            }
-        }
-
-    }
+        }}
 }
