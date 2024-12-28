@@ -53,24 +53,12 @@
         }
     }
     @include tablet{
-        margin-top: 4rem;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-        justify-content: center;
-        min-height: 60vh;
-        position: relative;
-        margin-left: 80px;
+        margin-left: 5rem;
 
     &::after{
         content: "";
         background-image: url("/images/olive-1.svg");
         background-size: 60%;
-        position: absolute;
-        background-repeat: no-repeat;
-        background-position: top right;
-        opacity: 0.20;
         top: -20%;
         right: 25%;
         left: -20%;
@@ -78,53 +66,17 @@
         height: 180%;
         z-index: -1;
     }
-
-    &__title{
-        color: $theme-color;
-        @include text-small2;
-    }
-    &__title-large{
-        @include text-giant;
-        color: $light-brown;
-    }
-    &__title-sub{
-        color: $lightest-brown;
-    }
     &__text{
-        color: $light-brown;
         margin-right: 40%;
-        @include text-large;
-        letter-spacing: 0.07rem;
-        line-height: 1.6rem;
-        font-weight: 600;
     }
-    &__btn{
-        margin-top: 2rem;
-        .btn{
-            padding: 1rem 2rem;
-            @include text-large;
-        }
-    }
-
     }
     @include desktop{
         margin-left: 12rem;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-        justify-content: center;
-        min-height: 60vh;
-        position: relative;
 
         &::after{
             content: "";
             background-image: url("/images/olive-1.svg");
             background-size: 40%;
-            position: absolute;
-            background-repeat: no-repeat;
-            background-position: top right;
-            opacity: 0.20;
             top: -10%;
             right: -25%;
             left: -60%;
@@ -132,33 +84,5 @@
             height: 155%;
             z-index: -1;
         }
-
-        &__title{
-            color: $theme-color;
-            @include text-small2;
-        }
-        &__title-large{
-            @include text-giant;
-            color: $light-brown;
-        }
-        &__title-sub{
-            color: $lightest-brown;
-        }
-        &__text{
-            color: $light-brown;
-            margin-right: 60%;
-            @include text-large;
-            letter-spacing: 0.07rem;
-            line-height: 1.6rem;
-            font-weight: 600;
-        }
-        &__btn{
-            margin-top: 2rem;
-            .btn{
-                padding: 1rem 2rem;
-                @include text-large;
-            }
-        }
-
     }
 }
